@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belize Culture: Home</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        :root {
+:root {
             --ocean: #0a6e8a;
             --ocean-deep: #064e63;
             --jungle: #2d7a3a;
@@ -306,7 +298,80 @@
         .quote-banner blockquote {
             position: relative;
             z-index: 1;
-            font-family: 'Playfair Display', serif;
+            font-.project-card h3 {
+            margin: 0 0 0.5rem;
+            font-size: 1.25rem;
+        }
+        .project-card p {
+            margin: 0.5rem 0;
+        }
+        .project-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.85rem 1.7rem;
+            background: linear-gradient(90deg, #4f46e5 60%, #6366f1 100%);
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            box-shadow: 0 2px 8px rgba(79,70,229,0.10);
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+        .project-link:hover {
+            background: linear-gradient(90deg, #3730a3 60%, #6366f1 100%);
+            box-shadow: 0 4px 16px rgba(79,70,229,0.18);
+        }
+        ol {
+            padding-left: 20px;
+        }
+        ol li {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 1rem;
+        }
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        th {
+            background-color: #f3f4f6;
+            font-weight: bold;
+            color: var(--primary-indigo-dark);
+        }
+        .contact-me {
+            text-align: center;
+            background: linear-gradient(90deg, #e0e7ff 60%, #f9fafb 100%);
+            border: 1.5px solid #c7d2fe;
+            border-radius: 14px;
+            box-shadow: 0 2px 12px rgba(79,70,229,0.08);
+        }
+        .contact-me a {
+            color: var(--primary-indigo);
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-decoration: none;
+            padding: 0.5rem 1.2rem;
+            border-radius: 8px;
+            background: #e0e7ff;
+            transition: background 0.2s;
+        }
+        .contact-me a:hover {
+            text-decoration: underline;
+            background: #c7d2fe;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            margin-top: 2rem;
+        }family: 'Playfair Display', serif;
             font-style: italic;
             font-size: clamp(1.4rem, 3vw, 2rem);
             color: #fff;
@@ -395,176 +460,36 @@
             .stats-grid { grid-template-columns: 1fr; }
             nav ul { gap: 0; }
         }
-    </style>
-</head>
-<body>
-<header>
-    <div class="logo">Leah Hall</div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Portfolio</a></li>
-            <li><a href="BelizeCultureHome.html" class="active">Belize Home</a></li>
-            <li><a href="belize-landmarks.html">Landmarks</a></li>
-            <li><a href="belize-traditions.html">Traditions</a></li>
-        </ul>
-    </nav>
-</header>
-<section class="hero">
-    <div class="hero-img-wrapper">
-        <img src="IMG_2195.JPG" alt="Belize landscape">
-    </div>
-    <div class="hero-content">
-        <span class="hero-eyebrow">Caribbean Jewel</span>
-        <h1 class="hero-title">
-            Welcome to the <em>Heart</em><br>of Belize
-        </h1>
-        <p class="hero-sub">
-            A vibrant tapestry of ancient Maya civilization, Garifuna rhythm,<br>
-            turquoise seas, and lush rainforest — all in one remarkable nation.
-        </p>
-        <div class="hero-cta">
-            <a href="belize-landmarks.html" class="btn btn-primary">Explore Landmarks</a>
-            <a href="belize-traditions.html" class="btn btn-outline">Discover Traditions</a>
-        </div>
-    </div>
-    <div class="hero-wave">
-        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#fdfcf8"/>
-        </svg>
-    </div>
-</section>
-<div class="intro-strip">
-    <div class="container">
-        <p>From the echoes of ancient Maya civilizations to the rhythm of Garifuna drums, Belize offers a rich tapestry of history, nature, and tradition — a digital celebration of one of Central America's most extraordinary nations.</p>
-    </div>
-</div>
-<main>
-    <section class="highlights">
-        <div class="container">
-            <div class="section-header">
-                <span class="label">Discover</span>
-                <h2>Our Nation's Highlights</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="grid-4">
-                <div class="highlight-card">
-                    <div class="card-icon icon-1">🏛️</div>
-                    <h3>Ancient Maya Ruins</h3>
-                    <p>Explore magnificent stone temples and palaces left behind by one of history's most fascinating civilizations.</p>
-                    <span class="card-tag tag-1">History</span>
-                </div>
-                <div class="highlight-card">
-                    <div class="card-icon icon-2">🥁</div>
-                    <h3>Garifuna Culture</h3>
-                    <p>Discover the soulful sounds and enduring spirit of the Garifuna people, recognized by UNESCO worldwide.</p>
-                    <span class="card-tag tag-2">UNESCO Heritage</span>
-                </div>
-                <div class="highlight-card">
-                    <div class="card-icon icon-3">🌊</div>
-                    <h3>Tropical Landscapes</h3>
-                    <p>Immerse yourself in pristine natural wonders — from the world's second-largest barrier reef to lush rainforests.</p>
-                    <span class="card-tag tag-3">Nature</span>
-                </div>
-                <div class="highlight-card">
-                    <div class="card-icon icon-4">🍽️</div>
-                    <h3>Belizean Cuisine</h3>
-                    <p>Savor diverse flavors — a delicious melting pot of Kriol, Maya, Mestizo, and Garifuna culinary traditions.</p>
-                    <span class="card-tag tag-4">Food & Culture</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="quote-banner">
-        <div class="container">
-            <blockquote>"Belize is not just a destination — it is an experience that stays with you long after you've left its shores."</blockquote>
-            <cite>— Belize Tourism Board</cite>
-        </div>
-    </div>
-    <section class="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-text">
-                    <h2>A Nation Like No Other</h2>
-                    <p>Nestled between Mexico, Guatemala, and the Caribbean Sea, Belize stands apart as a country where over a dozen cultures have woven together into something truly unique — a living, breathing culture of coexistence and celebration.</p>
-                    <p>This site serves as an educational resource dedicated to showcasing the unique heritage and breathtaking beauty of this Caribbean jewel, celebrating the traditions and landmarks that define Belizean identity.</p>
-                    <p>For official cultural initiatives, visit the <a href="https://www.moecst.gov.bz/" target="_blank">Ministry of Education, Culture, Science &amp; Technology</a>.</p>
-                </div>
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-number">6</div>
-                        <div class="stat-label">Distinct Cultures</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">2nd</div>
-                        <div class="stat-label">Largest Barrier Reef</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">1,000+</div>
-                        <div class="stat-label">Maya Sites</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">UNESCO</div>
-                        <div class="stat-label">Recognized Heritage</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-<footer>
-    <div class="container">
-        <p>&copy; 2026 <strong style="color:#fff">Leah Hall</strong>. All rights reserved. &nbsp;|&nbsp; <a href="https://www.moecst.gov.bz/" target="_blank">Ministry of Culture</a></p>
-    </div>
-</footer>
-<script>
-    // Scroll-triggered card animations
-    const cards = document.querySelectorAll('.highlight-card');
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
+        .landmark-card {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+            align-items: center;
+            margin-bottom: 3rem;
+            background: #fff;
+            border-radius: 16px;
+            padding: 2rem;
+            border: 1px solid #e8eef3;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+        .landmark-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+        }
+        .landmark-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--ocean-deep);
+            margin-bottom: 1rem;
+        }
+        .landmark-card p {
+            color: var(--muted);
+            line-height: 1.7;
+        }
+        @media (max-width: 768px) {
+            .landmark-card {
+                grid-template-columns: 1fr;
             }
-        });
-    }, { threshold: 0.15 });
-    cards.forEach(card => observer.observe(card));
-    // Animated number counter for stats
-    function animateCount(el, target, suffix = '') {
-        let start = 0;
-        const isNum = !isNaN(parseInt(target));
-        if (!isNum) return;
-        const end = parseInt(target);
-        const duration = 1800;
-        const step = duration / end;
-        const timer = setInterval(() => {
-            start += Math.ceil(end / 60);
-            if (start >= end) { start = end; clearInterval(timer); }
-            el.textContent = start.toLocaleString() + suffix;
-        }, step);
-    }
-    const statCards = document.querySelectorAll('.stat-card');
-    const statObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const numEl = entry.target.querySelector('.stat-number');
-                const raw = numEl.textContent.trim();
-                if (raw === '1,000+') {
-                    animateCount(numEl, 1000, '+');
-                } else if (raw === '6') {
-                    animateCount(numEl, 6);
-                }
-                statObserver.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.5 });
-    statCards.forEach(c => statObserver.observe(c));
-    // Subtle header scroll effect
-    const header = document.querySelector('header');
-    window.addEventListener('scroll', () => {
-        header.style.background = window.scrollY > 60
-            ? 'rgba(6, 78, 99, 0.98)'
-            : 'rgba(6, 78, 99, 0.92)';
-    });
-</script>
-</body>
-</html>
+        }
+    

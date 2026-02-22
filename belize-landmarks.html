@@ -4,163 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belize Culture: Landmarks</title>
-    <style>
-        :root {
-            --primary-indigo: #4f46e5;
-            --primary-indigo-dark: #3730a3;
-            --bg-light: #f9fafb;
-            --text-dark: #111827;
-            --text-muted: #4b5563;
-            --card-bg: #ffffff;
-            --border-color: #e5e7eb;
-            --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-        }
-        body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background-color: var(--bg-light);
-            color: var(--text-dark);
-            line-height: 1.6;
-        }
-        .container {
-            width: min(1100px, 90%);
-            margin: 0 auto;
-        }
-        header {
-            background-color: var(--primary-indigo);
-            color: white;
-            padding: 1rem 0;
-        }
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 1.8rem;
-        }
-        nav ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            display: flex;
-            gap: 1rem;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 0.5rem;
-            border-radius: 5px;
-            transition: background-color 0.2s;
-        }
-        nav a:hover, nav a.active {
-            background-color: var(--primary-indigo-dark);
-        }
-        main {
-            padding: 3rem 0;
-        }
-        .section {
-            background: var(--card-bg);
-            border-radius: 12px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: var(--shadow);
-            border: 1px solid var(--border-color);
-        }
-        h2 {
-            font-size: 1.75rem;
-            color: var(--primary-indigo-dark);
-            border-bottom: 3px solid var(--primary-indigo);
-            padding-bottom: 0.5rem;
-            margin-top: 0;
-            margin-bottom: 1.5rem;
-        }
-        footer {
-            text-align: center;
-            padding: 2rem 0;
-            color: var(--text-muted);
-            border-top: 1px solid var(--border-color);
-            margin-top: 2rem;
-        }
-        .landmark {
-            margin-bottom: 2rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid var(--border-color);
-        }
-        .landmark:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-        .landmark img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 12px;
-            margin-bottom: 1rem;
-        }
-        @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column;
-                gap: 1rem;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="container header-content">
-            <h1>Leah Hall</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Portfolio</a></li>
-                    <li><a href="belize-home.html">Belize Home</a></li>
-                    <li><a href="belize-landmarks.html" class="active">Landmarks</a></li>
-                    <li><a href="belize-traditions.html">Traditions</a></li>
-                </ul>
-            </nav>
-        </div>
+        <div class="logo">Leah Hall</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="belize-home.html">Belize Home</a></li>
+                <li><a href="belize-landmarks.html" class="active">Landmarks</a></li>
+                <li><a href="belize-traditions.html">Traditions</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <main class="container">
-        <section class="section">
-            <h2>A Journey Through Belizean History</h2>
-            <p>
-                Belize's history is written in stone, soil, and sea. Our landmarks tell a story of powerful ancient kingdoms giving way to a new era of colonial settlement and, finally, proud independence. Journey with us from the sacred steps of Maya temples to the coastal beacons that guided ships to our shores.
-            </p>
-            
-            <div class="landmark">
-                <h3>Landmark 1: Altun Ha</h3>
-                <img src="IMG_2190.JPG" alt="Altun Ha maya temple">
-                <p>
-                    <strong>Description:</strong> Once a vital trade and ceremonial center for the ancient Maya, Altun Ha is one of Belize's most famous archaeological sites. The "Temple of the Masonry Altars" stands as its iconic centerpiece, a testament to the advanced engineering and spiritual significance of the civilization that built it. It was here that the famous "Jade Head" of the sun god Kinich Ahau was discovered.
+<main>
+        <section class="highlights" style="padding-top: 10rem;">
+            <div class="container">
+                <div class="section-header">
+                    <span class="label">Explore</span>
+                    <h2>A Journey Through Belizean History</h2>
+                    <div class="divider"></div>
+                </div>
+                <p style="text-align: center; max-width: 780px; margin: 0 auto 3rem auto;">
+                    Belize's history is written in stone, soil, and sea. Our landmarks tell a story of powerful ancient kingdoms giving way to a new era of colonial settlement and, finally, proud independence. Journey with us from the sacred steps of Maya temples to the coastal beacons that guided ships to our shores.
                 </p>
-            </div>
 
-            <div class="landmark">
-                <h3>Landmark 2: The Baron Bliss Lighthouse</h3>
-                <img src="IMG_2191.JPG" alt="The Baron Bliss Lighthouse and Belize sign">
-                <p>
-                    <strong>Description:</strong> Standing guard at the mouth of the Belize River, the Baron Bliss Lighthouse is a cherished symbol of Belize City. It was erected in memory of Baron Henry Edward Ernest Victor Bliss, a great benefactor to the nation who, despite never setting foot on its soil, fell in love with Belize's coast and left his fortune to its people. The nearby sign, a popular photo spot, proudly welcomes all to the country.
-                </p>
-            </div>
+                <div class="landmark-card">
+                    <img src="IMG_2190.JPG" alt="Altun Ha maya temple">
+                    <div class="landmark-content">
+                        <h3>Altun Ha</h3>
+                        <p>
+                            Once a vital trade and ceremonial center for the ancient Maya, Altun Ha is one of Belize's most famous archaeological sites. The "Temple of the Masonry Altars" stands as its iconic centerpiece, a testament to the advanced engineering and spiritual significance of the civilization that built it. It was here that the famous "Jade Head" of the sun god Kinich Ahau was discovered.
+                        </p>
+                    </div>
+                </div>
 
-            <div class="landmark">
-                <h3>Landmark 3: Lamanai</h3>
-                <img src="IMG_2192.JPG" alt="Lamanai stela carving">
-                <p>
-                    <strong>Description:</strong> Meaning "submerged crocodile" in the Mayan language, Lamanai is one of the longest-continuously-occupied sites in the Maya world. Its temples, plazas, and intricately carved stelae, like the one pictured, overlook the New River Lagoon. The stela monuments served as stone records, documenting the powerful rulers and pivotal events that shaped Lamanai's long and storied history.
-                </p>
+                <div class="landmark-card">
+                    <img src="IMG_2191.JPG" alt="The Baron Bliss Lighthouse and Belize sign">
+                    <div class="landmark-content">
+                        <h3>The Baron Bliss Lighthouse</h3>
+                        <p>
+                            Standing guard at the mouth of the Belize River, the Baron Bliss Lighthouse is a cherished symbol of Belize City. It was erected in memory of Baron Henry Edward Ernest Victor Bliss, a great benefactor to the nation who, despite never setting foot on its soil, fell in love with Belize's coast and left his fortune to its people. The nearby sign, a popular photo spot, proudly welcomes all to the country.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="landmark-card">
+                    <img src="IMG_2192.JPG" alt="Lamanai stela carving">
+                    <div class="landmark-content">
+                        <h3>Lamanai</h3>
+                        <p>
+                            Meaning "submerged crocodile" in the Mayan language, Lamanai is one of the longest-continuously-occupied sites in the Maya world. Its temples, plazas, and intricately carved stelae, like the one pictured, overlook the New River Lagoon. The stela monuments served as stone records, documenting the powerful rulers and pivotal events that shaped Lamanai's long and storied history.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-
     <footer>
         <div class="container">
-            <p>&copy; 2026 Leah Hall. All rights reserved.</p>
+            <p>&copy; 2026 <strong style="color:#fff">Leah Hall</strong>. All rights reserved. &nbsp;|&nbsp; <a href="https://www.moecst.gov.bz/" target="_blank">Ministry of Culture</a></p>
         </div>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
