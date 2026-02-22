@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belize Culture: Traditions</title>
+    <style>
+        :root {
+            --primary-indigo: #4f46e5;
+            --primary-indigo-dark: #3730a3;
+            --bg-light: #f9fafb;
+            --text-dark: #111827;
+            --text-muted: #4b5563;
+            --card-bg: #ffffff;
+            --border-color: #e5e7eb;
+            --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        .container {
+            width: min(1100px, 90%);
+            margin: 0 auto;
+        }
+        header {
+            background-color: var(--primary-indigo);
+            color: white;
+            padding: 1rem 0;
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+        nav a:hover, nav a.active {
+            background-color: var(--primary-indigo-dark);
+        }
+        main {
+            padding: 3rem 0;
+        }
+        .section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+        }
+        h2 {
+            font-size: 1.75rem;
+            color: var(--primary-indigo-dark);
+            border-bottom: 3px solid var(--primary-indigo);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            margin-top: 2rem;
+        }
+        .tradition {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .tradition:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .tradition img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+        }
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <h1>Leah Hall</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Portfolio</a></li>
+                    <li><a href="belize-home.html">Belize Home</a></li>
+                    <li><a href="belize-landmarks.html">Landmarks</a></li>
+                    <li><a href="belize-traditions.html" class="active">Traditions</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h2>The Living Soul of Belize</h2>
+            <p>
+                The true soul of Belize is found in its people and their living traditions. Our cultural identity is a dynamic blend of ethnic celebrations, communal values, and a deep connection to the land and sea. This page highlights the practices and lifestyles that define what it means to be Belizean.
+            </p>
+
+            <div class="tradition">
+                <h3>Tradition 1: Enduring Maya Legacy</h3>
+                <img src="IMG_2193.JPG" alt="Steep steps of a Maya temple">
+                <p>
+                    <strong>Description:</strong> The influence of the ancient Maya extends far beyond the ruins. Their architectural genius, seen in the steep, precise angles of their temples, reflects a deep understanding of cosmology and engineering. Today, Maya traditions continue through language, intricate weaving, and spiritual practices that honor the sacred relationship between humanity and the natural world.
+                </p>
+            </div>
+
+            <div class="tradition">
+                <h3>Tradition 2: Island Life & The "Go Slow" Motto</h3>
+                <img src="IMG_2194.JPG" alt="Caye Caulker sign with boat">
+                <p>
+                    <strong>Description:</strong> On Belize's idyllic cayes, like Caye Caulker, life moves at a different pace. The unofficial motto, "Go Slow," is more than advice—it's a philosophy. It represents a laid-back lifestyle where community, conservation, and enjoying the simple beauty of the Caribbean Sea are prioritized over the rush of the modern world. Sandy streets, wooden homes, and stunning sunsets are the backdrop to this cherished island tradition.
+                </p>
+            </div>
+
+            <div class="tradition">
+                <h3>Tradition 3: A Celebration of National Pride</h3>
+                <img src="IMG_2196.JPG" alt="Collage of Belizean food">
+                <p>
+                    <strong>Description:</strong> Belizean national pride is a vibrant, flavorful, and colorful affair. It's found in the spirited celebrations on Independence Day, the shared joy of a family meal, and the diverse collage of foods that grace our tables. From savory rice and beans to fresh ceviche and the iconic Marie Sharp's hot sauce, our cuisine is a delicious expression of our multi-cultural heritage and a source of great national pride.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Leah Hall. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

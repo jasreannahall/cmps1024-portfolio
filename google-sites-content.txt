@@ -1,0 +1,62 @@
+Google Sites Structured Content
+==============================
+
+---
+
+Home Page
+---------
+
+**Intro:**
+Welcome to a digital celebration of Belize, a nation defined by its vibrant, multi-cultural identity. From the echoes of ancient Maya civilizations to the rhythm of Garifuna drums, Belize offers a rich tapestry of history, nature, and tradition. This site serves as an educational resource dedicated to showcasing the unique heritage and breathtaking beauty of this Caribbean jewel.
+
+**4 Highlights:**
+- **Ancient Maya Ruins:** Explore the magnificent stone temples and palaces left behind by one of history's most fascinating civilizations.
+- **Garifuna Music & Culture:** Discover the soulful sounds and enduring spirit of the Garifuna people, a culture recognized by UNESCO for its unique contributions to the world.
+- **Tropical Landscapes:** Immerse yourself in our pristine natural wonders, from the world’s second-largest barrier reef to lush, wildlife-filled rainforests.
+- **Belizean Cuisine:** Savor the diverse flavors of Belize, a delicious melting pot of Kriol, Maya, Mestizo, and Garifuna culinary traditions.
+
+**Image Assignment:**
+Use `IMG_2195.JPG` (the colorful Belize collage) as the hero banner.
+
+**Required Link:**
+For more information on official cultural initiatives, please visit the [Ministry of Education, Culture, Science and Technology](https://www.moecst.gov.bz/).
+
+---
+
+Historical Landmarks Page
+-------------------------
+
+**Paragraph:**
+Belize's history is written in stone, soil, and sea. Our landmarks tell a story of powerful ancient kingdoms giving way to a new era of colonial settlement and, finally, proud independence. Journey with us from the sacred steps of Maya temples to the coastal beacons that guided ships to our shores.
+
+**Landmark 1 (Altun Ha):**
+- Image: `IMG_2190.JPG`
+- Description: Once a vital trade and ceremonial center for the ancient Maya, Altun Ha is one of Belize's most famous archaeological sites. The "Temple of the Masonry Altars" stands as its iconic centerpiece, a testament to the advanced engineering and spiritual significance of the civilization that built it. It was here that the famous "Jade Head" of the sun god Kinich Ahau was discovered.
+
+**Landmark 2 (The Baron Bliss Lighthouse/Sign):**
+- Image: `IMG_2191.JPG`
+- Description: Standing guard at the mouth of the Belize River, the Baron Bliss Lighthouse is a cherished symbol of Belize City. It was erected in memory of Baron Henry Edward Ernest Victor Bliss, a great benefactor to the nation who, despite never setting foot on its soil, fell in love with Belize's coast and left his fortune to its people. The nearby sign, a popular photo spot, proudly welcomes all to the country.
+
+**Landmark 3 (Lamanai Stela):**
+- Image: `IMG_2192.JPG`
+- Description: Meaning "submerged crocodile" in the Mayan language, Lamanai is one of the longest-continuously-occupied sites in the Maya world. Its temples, plazas, and intricately carved stelae, like the one pictured, overlook the New River Lagoon. The stela monuments served as stone records, documenting the powerful rulers and pivotal events that shaped Lamanai's long and storied history.
+
+---
+
+Belizean Traditions Page
+------------------------
+
+**Paragraph:**
+The true soul of Belize is found in its people and their living traditions. Our cultural identity is a dynamic blend of ethnic celebrations, communal values, and a deep connection to the land and sea. This page highlights the practices and lifestyles that define what it means to be Belizean.
+
+**Tradition 1 (Maya Architecture/Rituals):**
+- Image: `IMG_2193.JPG`
+- Description: The influence of the ancient Maya extends far beyond the ruins. Their architectural genius, seen in the steep, precise angles of their temples, reflects a deep understanding of cosmology and engineering. Today, Maya traditions continue through language, intricate weaving, and spiritual practices that honor the sacred relationship between humanity and the natural world.
+
+**Tradition 2 (Island Life/Caye Caulker "Go Slow")**
+- Image: `IMG_2194.JPG`
+- Description: On Belize's idyllic cayes, like Caye Caulker, life moves at a different pace. The unofficial motto, "Go Slow," is more than advice—it's a philosophy. It represents a laid-back lifestyle where community, conservation, and enjoying the simple beauty of the Caribbean Sea are prioritized over the rush of the modern world. Sandy streets, wooden homes, and stunning sunsets are the backdrop to this cherished island tradition.
+
+**Tradition 3 (National Pride/Food Collage):**
+- Image: `IMG_2196.JPG`
+- Description: Belizean national pride is a vibrant, flavorful, and colorful affair. It's found in the spirited celebrations on Independence Day, the shared joy of a family meal, and the diverse collage of foods that grace our tables. From savory rice and beans to fresh ceviche and the iconic Marie Sharp's hot sauce, our cuisine is a delicious expression of our multi-cultural heritage and a source of great national pride.
