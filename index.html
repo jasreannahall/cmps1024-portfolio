@@ -18,7 +18,7 @@
         body {
             margin: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background-color: var(--bg-light);
+            background: linear-gradient(120deg, #e0e7ff 0%, #f9fafb 100%);
             color: var(--text-dark);
             line-height: 1.6;
         }
@@ -64,19 +64,21 @@
         }
         .section {
             background: var(--card-bg);
-            border-radius: 12px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: var(--shadow);
-            border: 1px solid var(--border-color);
+            border-radius: 18px;
+            padding: 2.5rem 2rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 8px 32px rgba(79,70,229,0.10), 0 2px 8px rgba(0,0,0,0.06);
+            border: 1.5px solid var(--border-color);
         }
         h2 {
-            font-size: 1.75rem;
+            font-size: 2rem;
             color: var(--primary-indigo-dark);
             border-bottom: 3px solid var(--primary-indigo);
             padding-bottom: 0.5rem;
             margin-top: 0;
             margin-bottom: 1.5rem;
+            letter-spacing: 0.5px;
+            font-weight: 700;
         }
         .contact-grid {
             display: grid;
@@ -85,10 +87,13 @@
             align-items: center;
         }
         .contact-grid img {
-            width: 100%;
-            height: auto;
-            border-radius: 12px;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
             object-fit: cover;
+            box-shadow: 0 4px 24px rgba(79,70,229,0.18), 0 1.5px 6px rgba(0,0,0,0.10);
+            border: 4px solid var(--primary-indigo);
+            margin: 0 auto 1rem auto;
         }
         .contact-info p {
             margin: 0.5rem 0;
@@ -99,10 +104,11 @@
             color: var(--text-muted);
         }
         .project-card {
-            border: 1px solid var(--border-color);
-            border-radius: 10px;
-            padding: 1.5rem;
-            background-color: var(--bg-light);
+            border: 1.5px solid var(--primary-indigo);
+            border-radius: 14px;
+            padding: 2rem 1.5rem;
+            background: linear-gradient(120deg, #f0f4ff 60%, #e0e7ff 100%);
+            box-shadow: 0 2px 12px rgba(79,70,229,0.10);
         }
         .project-card h3 {
             margin: 0 0 0.5rem;
@@ -114,16 +120,19 @@
         .project-link {
             display: inline-block;
             margin-top: 1rem;
-            padding: 0.75rem 1.5rem;
-            background-color: var(--primary-indigo);
-            color: white;
+            padding: 0.85rem 1.7rem;
+            background: linear-gradient(90deg, #4f46e5 60%, #6366f1 100%);
+            color: #fff;
             text-decoration: none;
             font-weight: bold;
-            border-radius: 8px;
-            transition: background-color 0.3s;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            box-shadow: 0 2px 8px rgba(79,70,229,0.10);
+            transition: background 0.3s, box-shadow 0.3s;
         }
         .project-link:hover {
-            background-color: var(--primary-indigo-dark);
+            background: linear-gradient(90deg, #3730a3 60%, #6366f1 100%);
+            box-shadow: 0 4px 16px rgba(79,70,229,0.18);
         }
         ol {
             padding-left: 20px;
@@ -149,15 +158,24 @@
         }
         .contact-me {
             text-align: center;
+            background: linear-gradient(90deg, #e0e7ff 60%, #f9fafb 100%);
+            border: 1.5px solid #c7d2fe;
+            border-radius: 14px;
+            box-shadow: 0 2px 12px rgba(79,70,229,0.08);
         }
         .contact-me a {
             color: var(--primary-indigo);
             font-weight: bold;
             font-size: 1.2rem;
             text-decoration: none;
+            padding: 0.5rem 1.2rem;
+            border-radius: 8px;
+            background: #e0e7ff;
+            transition: background 0.2s;
         }
         .contact-me a:hover {
             text-decoration: underline;
+            background: #c7d2fe;
         }
         footer {
             text-align: center;
