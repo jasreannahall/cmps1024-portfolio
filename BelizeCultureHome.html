@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belize Culture: Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ocean: #0a6e8a;
+            --ocean-deep: #064e63;
+            --jungle: #2d7a3a;
+            --jungle-light: #4caf64;
+            --sand: #f5e6c8;
+            --sunset: #e87c3e;
+            --gold: #f0b429;
+            --white: #fdfcf8;
+            --dark: #1a1a2e;
+            --text: #2c3e50;
+            --muted: #6b7a8d;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: var(--white);
+            color: var(--text);
+            overflow-x: hidden;
+        }
+        header {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(6, 78, 99, 0.92);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            animation: slideDown 0.6s ease both;
+        }
+        @keyframes slideDown {
+            from { transform: translateY(-100%); opacity: 0; }
+            to   { transform: translateY(0);     opacity: 1; }
+        }
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--gold);
+            letter-spacing: 0.03em;
+        }
+        nav ul { list-style: none; display: flex; gap: 0.25rem; }
+        nav a {
+            color: rgba(255,255,255,0.85);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.875rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            padding: 0.4rem 0.9rem;
+            border-radius: 100px;
+            transition: background 0.25s, color 0.25s;
+        }
+        nav a:hover { background: rgba(255,255,255,0.15); color: #fff; }
+        nav a.active { background: var(--gold); color: var(--ocean-deep); }
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--ocean-deep) 0%, var(--ocean) 40%, var(--jungle) 100%);
+        }
+        .hero::before, .hero::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.35;
+            animation: float 8s ease-in-out infinite alternate;
+        }
+        .hero::before {
+            width: 600px; height: 600px;
+            background: var(--jungle-light);
+            top: -150px; left: -100px;
+        }
+        .hero::after {
+            width: 500px; height: 500px;
+            background: var(--sunset);
+            bottom: -100px; right: -80px;
+            animation-delay: -3s;
+        }
+        @keyframes float {
+            from { transform: translate(0, 0) scale(1); }
+            to   { transform: translate(40px, 30px) scale(1.1); }
+        }
+        .hero-wave {
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 80px;
+            overflow: hidden;
+        }
+        .hero-wave svg { width: 100%; height: 100%; display: block; }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 2rem 1.5rem;
+            max-width: 760px;
+        }
+        .hero-eyebrow {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--gold);
+            border: 1px solid rgba(240,180,41,0.4);
+            padding: 0.3rem 1rem;
+            border-radius: 100px;
+            margin-bottom: 1.25rem;
+            animation: fadeUp 0.7s 0.3s ease both;
+        }
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            color: #fff;
+            line-height: 1.15;
+            margin-bottom: 1.25rem;
+            animation: fadeUp 0.7s 0.5s ease both;
+        }
+        .hero-title em {
+            font-style: italic;
+            color: var(--gold);
+        }
+        .hero-sub {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.8);
+            font-weight: 300;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+            animation: fadeUp 0.7s 0.7s ease both;
+        }
+        .hero-cta {
+            display: inline-flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            animation: fadeUp 0.7s 0.9s ease both;
+        }
+        .btn {
+            padding: 0.75rem 2rem;
+            border-radius: 100px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0,0,0,0.25); }
+        .btn-primary { background: var(--gold); color: var(--ocean-deep); }
+        .btn-outline { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.5); }
+        .btn-outline:hover { border-color: #fff; }
+        .hero-img-wrapper {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+        }
+        .hero-img-wrapper img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            opacity: 0.18;
+        }
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(28px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        main { padding-bottom: 5rem; }
+        .container {
+            width: min(1100px, 92%);
+            margin: 0 auto;
+        }
+        .intro-strip {
+            background: var(--ocean-deep);
+            color: #fff;
+            padding: 2.5rem 0;
+            text-align: center;
+        }
+        .intro-strip p {
+            font-size: 1.15rem;
+            font-weight: 300;
+            color: rgba(255,255,255,0.85);
+            max-width: 780px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .section-header .label {
+            font-size: 0.75rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--ocean);
+            font-weight: 700;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .section-header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.8rem, 4vw, 2.6rem);
+            color: var(--ocean-deep);
+            line-height: 1.2;
+        }
+        .section-header .divider {
+            width: 60px; height: 4px;
+            background: linear-gradient(90deg, var(--ocean), var(--jungle-light));
+            border-radius: 2px;
+            margin: 1rem auto 0;
+        }
+        .highlights { padding: 5rem 0; }
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 1.5rem;
+        }
+        .highlight-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 2rem 1.5rem;
+            border: 1px solid #e8eef3;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        .highlight-card.visible {
+            animation: fadeUp 0.6s ease forwards;
+        }
+        .highlight-card:nth-child(2) { animation-delay: 0.1s; }
+        .highlight-card:nth-child(3) { animation-delay: 0.2s; }
+        .highlight-card:nth-child(4) { animation-delay: 0.3s; }
+        .highlight-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+        }
+        .card-icon {
+            width: 64px; height: 64px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            margin: 0 auto 1.25rem;
+        }
+        .icon-1 { background: rgba(10,110,138,0.12); }
+        .icon-2 { background: rgba(232,124,62,0.12); }
+        .icon-3 { background: rgba(45,122,58,0.12); }
+        .icon-4 { background: rgba(240,180,41,0.15); }
+        .highlight-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            color: var(--ocean-deep);
+            margin-bottom: 0.75rem;
+        }
+        .highlight-card p {
+            font-size: 0.9rem;
+            color: var(--muted);
+            line-height: 1.7;
+        }
+        .card-tag {
+            display: inline-block;
+            margin-top: 1rem;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 0.25rem 0.75rem;
+            border-radius: 100px;
+        }
+        .tag-1 { background: rgba(10,110,138,0.1); color: var(--ocean); }
+        .tag-2 { background: rgba(232,124,62,0.1); color: var(--sunset); }
+        .tag-3 { background: rgba(45,122,58,0.12); color: var(--jungle); }
+        .tag-4 { background: rgba(240,180,41,0.15); color: #b07d00; }
+        .quote-banner {
+            background: linear-gradient(135deg, var(--jungle) 0%, var(--ocean) 100%);
+            padding: 5rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .quote-banner::before {
+            content: '"';
+            position: absolute;
+            top: -1rem; left: 50%;
+            transform: translateX(-50%);
+            font-family: 'Playfair Display', serif;
+            font-size: 20rem;
+            color: rgba(255,255,255,0.05);
+            line-height: 1;
+            pointer-events: none;
+        }
+        .quote-banner blockquote {
+            position: relative;
+            z-index: 1;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: clamp(1.4rem, 3vw, 2rem);
+            color: #fff;
+            max-width: 700px;
+            margin: 0 auto 1.5rem;
+            line-height: 1.5;
+        }
+        .quote-banner cite {
+            font-style: normal;
+            font-size: 0.85rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--gold);
+        }
+        .about { padding: 5rem 0; }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        .about-text h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: var(--ocean-deep);
+            margin-bottom: 1rem;
+        }
+        .about-text p {
+            color: var(--muted);
+            line-height: 1.85;
+            margin-bottom: 1rem;
+        }
+        .about-text a {
+            color: var(--ocean);
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 2px solid rgba(10,110,138,0.25);
+            transition: border-color 0.2s;
+        }
+        .about-text a:hover { border-color: var(--ocean); }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.25rem;
+        }
+        .stat-card {
+            background: var(--white);
+            border: 1px solid #dde6ed;
+            border-radius: 14px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+            transition: transform 0.25s;
+        }
+        .stat-card:hover { transform: translateY(-4px); }
+        .stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.4rem;
+            color: var(--ocean);
+            line-height: 1;
+            margin-bottom: 0.4rem;
+        }
+        .stat-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--muted);
+            font-weight: 600;
+        }
+        footer {
+            background: var(--dark);
+            color: rgba(255,255,255,0.6);
+            text-align: center;
+            padding: 2.5rem 1rem;
+            font-size: 0.875rem;
+        }
+        footer a { color: var(--gold); text-decoration: none; }
+        @media (max-width: 768px) {
+            header { padding: 0.75rem 1rem; }
+            .logo { font-size: 1.2rem; }
+            nav a { font-size: 0.75rem; padding: 0.3rem 0.6rem; }
+            .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+            .stats-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 480px) {
+            .stats-grid { grid-template-columns: 1fr; }
+            nav ul { gap: 0; }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">Leah Hall</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="BelizeCultureHome.html" class="active">Belize Home</a></li>
+            <li><a href="belize-landmarks.html">Landmarks</a></li>
+            <li><a href="belize-traditions.html">Traditions</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="hero">
+    <div class="hero-img-wrapper">
+        <img src="IMG_2195.JPG" alt="Belize landscape">
+    </div>
+    <div class="hero-content">
+        <span class="hero-eyebrow">Caribbean Jewel</span>
+        <h1 class="hero-title">
+            Welcome to the <em>Heart</em><br>of Belize
+        </h1>
+        <p class="hero-sub">
+            A vibrant tapestry of ancient Maya civilization, Garifuna rhythm,<br>
+            turquoise seas, and lush rainforest — all in one remarkable nation.
+        </p>
+        <div class="hero-cta">
+            <a href="belize-landmarks.html" class="btn btn-primary">Explore Landmarks</a>
+            <a href="belize-traditions.html" class="btn btn-outline">Discover Traditions</a>
+        </div>
+    </div>
+    <div class="hero-wave">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#fdfcf8"/>
+        </svg>
+    </div>
+</section>
+<div class="intro-strip">
+    <div class="container">
+        <p>From the echoes of ancient Maya civilizations to the rhythm of Garifuna drums, Belize offers a rich tapestry of history, nature, and tradition — a digital celebration of one of Central America's most extraordinary nations.</p>
+    </div>
+</div>
+<main>
+    <section class="highlights">
+        <div class="container">
+            <div class="section-header">
+                <span class="label">Discover</span>
+                <h2>Our Nation's Highlights</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="grid-4">
+                <div class="highlight-card">
+                    <div class="card-icon icon-1">🏛️</div>
+                    <h3>Ancient Maya Ruins</h3>
+                    <p>Explore magnificent stone temples and palaces left behind by one of history's most fascinating civilizations.</p>
+                    <span class="card-tag tag-1">History</span>
+                </div>
+                <div class="highlight-card">
+                    <div class="card-icon icon-2">🥁</div>
+                    <h3>Garifuna Culture</h3>
+                    <p>Discover the soulful sounds and enduring spirit of the Garifuna people, recognized by UNESCO worldwide.</p>
+                    <span class="card-tag tag-2">UNESCO Heritage</span>
+                </div>
+                <div class="highlight-card">
+                    <div class="card-icon icon-3">🌊</div>
+                    <h3>Tropical Landscapes</h3>
+                    <p>Immerse yourself in pristine natural wonders — from the world's second-largest barrier reef to lush rainforests.</p>
+                    <span class="card-tag tag-3">Nature</span>
+                </div>
+                <div class="highlight-card">
+                    <div class="card-icon icon-4">🍽️</div>
+                    <h3>Belizean Cuisine</h3>
+                    <p>Savor diverse flavors — a delicious melting pot of Kriol, Maya, Mestizo, and Garifuna culinary traditions.</p>
+                    <span class="card-tag tag-4">Food & Culture</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="quote-banner">
+        <div class="container">
+            <blockquote>"Belize is not just a destination — it is an experience that stays with you long after you've left its shores."</blockquote>
+            <cite>— Belize Tourism Board</cite>
+        </div>
+    </div>
+    <section class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>A Nation Like No Other</h2>
+                    <p>Nestled between Mexico, Guatemala, and the Caribbean Sea, Belize stands apart as a country where over a dozen cultures have woven together into something truly unique — a living, breathing culture of coexistence and celebration.</p>
+                    <p>This site serves as an educational resource dedicated to showcasing the unique heritage and breathtaking beauty of this Caribbean jewel, celebrating the traditions and landmarks that define Belizean identity.</p>
+                    <p>For official cultural initiatives, visit the <a href="https://www.moecst.gov.bz/" target="_blank">Ministry of Education, Culture, Science &amp; Technology</a>.</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">Distinct Cultures</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">2nd</div>
+                        <div class="stat-label">Largest Barrier Reef</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">1,000+</div>
+                        <div class="stat-label">Maya Sites</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">UNESCO</div>
+                        <div class="stat-label">Recognized Heritage</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <p>&copy; 2026 <strong style="color:#fff">Leah Hall</strong>. All rights reserved. &nbsp;|&nbsp; <a href="https://www.moecst.gov.bz/" target="_blank">Ministry of Culture</a></p>
+    </div>
+</footer>
+<script>
+    // Scroll-triggered card animations
+    const cards = document.querySelectorAll('.highlight-card');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+    cards.forEach(card => observer.observe(card));
+    // Animated number counter for stats
+    function animateCount(el, target, suffix = '') {
+        let start = 0;
+        const isNum = !isNaN(parseInt(target));
+        if (!isNum) return;
+        const end = parseInt(target);
+        const duration = 1800;
+        const step = duration / end;
+        const timer = setInterval(() => {
+            start += Math.ceil(end / 60);
+            if (start >= end) { start = end; clearInterval(timer); }
+            el.textContent = start.toLocaleString() + suffix;
+        }, step);
+    }
+    const statCards = document.querySelectorAll('.stat-card');
+    const statObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const numEl = entry.target.querySelector('.stat-number');
+                const raw = numEl.textContent.trim();
+                if (raw === '1,000+') {
+                    animateCount(numEl, 1000, '+');
+                } else if (raw === '6') {
+                    animateCount(numEl, 6);
+                }
+                statObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+    statCards.forEach(c => statObserver.observe(c));
+    // Subtle header scroll effect
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', () => {
+        header.style.background = window.scrollY > 60
+            ? 'rgba(6, 78, 99, 0.98)'
+            : 'rgba(6, 78, 99, 0.92)';
+    });
+</script>
+</body>
+</html>
